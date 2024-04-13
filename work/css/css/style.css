@@ -5,24 +5,25 @@
   padding: 0;
 }
 
-input, select, button {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  border: none;
-  outline: none;
-  padding: 0px;
-}
-
 .wrapper {
   width: 100%;
   background: #cff1ff;
 }
 
 .inner {
-  margin: 0 auto;
+  margin: 0 auto ;
   width: 600px;
+}
+
+input, select, button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0px;
 }
 
 .content__title {
@@ -34,26 +35,28 @@ input, select, button {
   margin-top: 25px;
 }
 
-.label__text {
-  font-size: 14px;
-  color: #464646;
-}
 
 .is__flex {
   display: flex;
 }
 
-.personal__content, .account__content, .contact__content, .subscription__content, .submit__content{
+
+.label__text {
+  font-size: 15px;
+  color: #464646;
+}
+
+.personal__content,  .account__content,  .contact__content,  .subscription__content,  .submit__content{
   margin-top: 50px;
 }
 
-.required {
+.kome {
   color: #e40000;
 }
 
-.page__title {
+.title {
   padding-top: 60px;
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -64,29 +67,29 @@ input, select, button {
 }
 
 .form__title {
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
 }
 
 .input__area {
   width: 100%;
   height: 35px;
-  margin-top: 6px;
+  margin-top: 5px;
   padding: 5px;
   color: #545658;
   box-sizing: border-box;
-  border: 1px solid #d9d9d9;
-  background: #fbfbfb;
+  border: 1px solid #ffffff;
+  background: #ffffff;
 }
 
 .input__area:focus {
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: rgba(93, 130, 194, 0.4);
   box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1);
 }
 
 .select__area, .gender__area {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .select__unit {
@@ -95,15 +98,15 @@ input, select, button {
 }
 
 .select__unit:after {
-  content: "";
-  position: absolute;
+  display: inline-block;
   width: 5px;
   height: 5px;
   right: 10px;
   top: 45%;
-  display: inline-block;
-  border-bottom: 2px solid #c3c3c3;
-  border-right: 2px solid #c3c3c3;
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   transform: rotate(45deg);
 }
 
@@ -123,26 +126,25 @@ input, select, button {
 }
 
 .gender__element span:before {
-  content: "";
-  position: absolute;
+  width: 15px;
+  height: 15px;
   top: 50%;
   left: 0px;
-  width: 14px;
-  height: 14px;
-  background-color: #fbfbfb;
-  border: 1px solid #d9d9d9;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   transform: translateY(-50%);
 }
 
-.gender__content:checked +
-span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 4px;
+.gender__content:checked +　span:after {
   width: 8px;
   height: 8px;
+  top: 50%;
+  left: 4px;
+  content: "";
+  position: absolute;
   background-color: #017cbf;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -154,54 +156,54 @@ span:after {
 }
 
 .subscription__label:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
   width: 15px;
   height: 15px;
+  top: 50%;
+  left: 0px;
+  content: "";
+  position: absolute;
   margin-top: -8px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #ffffff;
   background: #ffffff;
 }
 
 .subscription__unit input:checked + .subscription__label:after {
-  content: "";
-  position: absolute;
+  width: 5px;
+  height: 13px;
   top: 50%;
   left: 6px;
-  width: 6px;
-  height: 13px;
-  margin-top: -11px;
+  content: "";
+  position: absolute;
+  margin-top: -10px;
   border-right: 3px solid #0140bf;
   border-bottom: 3px solid #0140bf;
   transform: rotate(45deg);
 }
 
 .btn {
-  cursor: pointer;
   display: inline-block;
-  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   text-align: center;
   transition: 0.3s;
-  padding: 13px;
+  padding: 12px;
   width: 100%;
 }
 
-.btn__submit {
+.btn_submit {
   padding: 13px;
   background: #0170bf;
-  color: #fff;
+  color: #ffffff;
 }
 
-.btn__submit:active {
-  background: #fff;
+.btn_submit:active {
+  background: #ffffff;
   color: #0170bf;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #ffffff;
 }
 
 .other-text {
